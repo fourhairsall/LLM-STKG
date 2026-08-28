@@ -28,6 +28,21 @@ bge_model/
 # ---- Scratch / debug ----
 pngcheck/
 _baseline_ranks_trajectory_OLD.json
+# smoke-test / exploratory-sweep json artifacts (not paper-cited)
+_smoke_*.json
+*_smoke*.json
+_sweep_tune_*.json
+_threshold_scan.json
+
+# ---- Env / download helper scripts (BGE fetched at runtime, not committed) ----
+_dl_bge*.sh
+_install_bge*.sh
+_test_envs.sh
+# Windows-only launcher (cross-platform repo)
+*.bat
+# duplicate iteration launchers (keep only the final version)
+run_cross_new_llm4poi_v2.sh
+run_cross_new_llm4poi_v3.sh
 
 # ---- OS ----
 .DS_Store
