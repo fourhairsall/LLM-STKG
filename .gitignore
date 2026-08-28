@@ -33,6 +33,18 @@ _smoke_*.json
 *_smoke*.json
 _sweep_tune_*.json
 _threshold_scan.json
+# Root-level exploratory/debug artifacts removed from the repo (kept locally,
+# recoverable from git history). Paper-cited underscore files live under
+# results/ subdirs, so a ROOT-LEVEL pattern is safe and will not re-include them.
+/_*.py
+/_*.pt
+/_*.png
+/_*.json
+/_*.csv
+/_*.sh
+/_*.txt
+/_*.md
+/_*.out
 
 # ---- Env / download helper scripts (BGE fetched at runtime, not committed) ----
 _dl_bge*.sh
