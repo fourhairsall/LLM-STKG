@@ -1,0 +1,78 @@
+{
+  "dataset": "Foursquare-NYC (LLM4POI, real)",
+  "protocol": "full-candidate ranking, official train/test split, session-based baselines",
+  "stats": {
+    "n_pois": 4980,
+    "n_users": 1047,
+    "n_train_trajs": 11022,
+    "n_train_checkins": 83228,
+    "avg_traj_len": 7.55,
+    "max_traj_len": 270,
+    "n_test_pairs": 1447,
+    "n_categories": 313,
+    "num_users_remapped": 1047,
+    "num_pois_remapped": 4980
+  },
+  "num_pois": 4980,
+  "rank_diag": {
+    "full": {
+      "LLM-STKG (ours)": {
+        "pct_rank1": 0.0035,
+        "median_rank": 2507.0,
+        "rank_hist": {
+          "rank1": 0.0035,
+          "rank2-3": 0.0028,
+          "rank4-5": 0.0,
+          "rank6-10": 0.0021,
+          "rank11-50": 0.0373,
+          "rank51-200": 0.0518,
+          "rank200+": 0.9026
+        },
+        "top10_score_std": 0.3449,
+        "target_vs_top1_ratio": 0.8336
+      }
+    },
+    "cold": {
+      "LLM-STKG (ours)": {
+        "pct_rank1": 0.0,
+        "median_rank": 2811.0,
+        "rank_hist": {
+          "rank1": 0.0,
+          "rank2-3": 0.0,
+          "rank4-5": 0.0,
+          "rank6-10": 0.0036,
+          "rank11-50": 0.0036,
+          "rank51-200": 0.0143,
+          "rank200+": 0.9786
+        },
+        "top10_score_std": 0.3444,
+        "target_vs_top1_ratio": 0.8207
+      }
+    }
+  },
+  "num_test": 1447,
+  "results": {
+    "LLM-STKG (ours)": {
+      "Recall@5": 0.0062,
+      "NDCG@5": 0.0048,
+      "Recall@10": 0.0083,
+      "NDCG@10": 0.0051
+    }
+  },
+  "cold_start(≤5)": {
+    "n": 280,
+    "results": {
+      "LLM-STKG (ours)": {
+        "Recall@5": 0.0,
+        "NDCG@5": 0.0,
+        "Recall@10": 0.0036,
+        "NDCG@10": 0.0005
+      }
+    }
+  },
+  "cold_poi_strict": {
+    "n": 0,
+    "ratio": 0.0,
+    "results": {}
+  }
+}

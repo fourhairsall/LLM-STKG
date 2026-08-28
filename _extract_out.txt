@@ -1,0 +1,29 @@
+\midrule
+\multicolumn{5}{c}{\textbf{Steam-200k} (rev. 0.0044, mask ON)} \\
+Model & R@5 & R@10 & N@5 & N@10 \\
+\midrule
+\textcolor{cbest}{\textbf{LLM-STKG}} & \textbf{0.2889} & \textbf{0.3775} & \textbf{0.2300} & \textbf{0.2591} \\
+LLM4POI-style (text) & 0.0867 & 0.1465 & 0.0558 & 0.0750 \\
+LLM4POI-style (ID-only) & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+SASRec & 0.2297 & 0.2847 & 0.1809 & 0.1986 \\
+LightGCN & 0.0914 & 0.1741 & 0.0508 & 0.0780 \\
+BPR-MF & 0.0004 & 0.0015 & 0.0003 & 0.0006 \\
+FPMC & 0.0736 & 0.1187 & 0.0524 & 0.0667 \\
+GRU-STGN & 0.1131 & 0.1392 & 0.0961 & 0.1043 \\
+Popularity & 0.0537 & 0.1108 & 0.0317 & 0.0489 \\
+% Steam-200k: num_pois=5000 num_test=5216 revisit=0.0044 mask=ON
+\midrule
+\multicolumn{5}{c}{\textbf{Amazon Beauty} (rev. 0.0000, mask ON)} \\
+Model & R@5 & R@10 & N@5 & N@10 \\
+\midrule
+\textcolor{cbest}{\textbf{LLM-STKG}} & \textbf{0.0691} & \textbf{0.1087} & \textbf{0.0421} & \textbf{0.0547} \\
+LLM4POI-style (text) & 0.0074 & 0.0147 & 0.0044 & 0.0066 \\
+LLM4POI-style (ID-only) & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+SASRec & 0.0090 & 0.0153 & 0.0053 & 0.0073 \\
+LightGCN & 0.0243 & 0.0384 & 0.0135 & 0.0179 \\
+BPR-MF & 0.0077 & 0.0115 & 0.0055 & 0.0067 \\
+FPMC & 0.0064 & 0.0102 & 0.0051 & 0.0064 \\
+GRU-STGN & 0.0038 & 0.0102 & 0.0029 & 0.0048 \\
+Popularity & 0.0192 & 0.0243 & 0.0119 & 0.0134 \\
+% Amazon Beauty: num_pois=783 num_test=782 revisit=0.0000 mask=ON
+%% --- end of auto-extracted new-domain sub-tables ---

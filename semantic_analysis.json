@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "n_pois": 4980,
+    "cos_sim_mean": 0.7415764856736716,
+    "cos_sim_std": 0.06492213881973626,
+    "cos_sim_p05": 0.6597976088523865,
+    "cos_sim_p25": 0.7063443660736084,
+    "cos_sim_p50": 0.7371402382850647,
+    "cos_sim_p75": 0.7671493887901306,
+    "cos_sim_p95": 0.833589917421341,
+    "edge_density_tau0.30": 0.9997991967871486,
+    "edge_density_tau0.50": 0.9997991967871486,
+    "edge_density_tau0.85": 0.039694198480669664,
+    "edge_density_tau0.90": 0.0317702133836551,
+    "edge_density_tau0.92": 0.030646844405735393,
+    "frac_dup_ge0.99": 0.0014459444202512862,
+    "same_cat_mean_sim": 0.963129445006988,
+    "cross_cat_mean_sim": 0.7345863740559616,
+    "same_minus_cross_cat": 0.22854307095102644,
+    "top1_same_cat_frac(sanity)": 0.9945
+  },
+  "top3_examples": [
+    {
+      "query_poi": 355,
+      "query_cat": "Hotel",
+      "neighbors": [
+        {
+          "poi": 1167,
+          "cat": "Hotel",
+          "cos": 1.0
+        },
+        {
+          "poi": 624,
+          "cat": "Hotel",
+          "cos": 1.0
+        },
+        {
+          "poi": 690,
+          "cat": "Hotel",
+          "cos": 1.0
+        }
+      ]
+    },
+    {
+      "query_poi": 556,
+      "query_cat": "Bar",
+      "neighbors": [
+        {
+          "poi": 1381,
+          "cat": "Bar",
+          "cos": 1.0
+        },
+        {
+          "poi": 4565,
+          "cat": "Bar",
+          "cos": 1.0
+        },
+        {
+          "poi": 1403,
+          "cat": "Bar",
+          "cos": 1.0
+        }
+      ]
+    },
+    {
+      "query_poi": 446,
+      "query_cat": "Restaurant",
+      "neighbors": [
+        {
+          "poi": 4039,
+          "cat": "Restaurant",
+          "cos": 0.971
+        },
+        {
+          "poi": 1296,
+          "cat": "Restaurant",
+          "cos": 0.9681
+        },
+        {
+          "poi": 1081,
+          "cat": "Restaurant",
+          "cos": 0.9679
+        }
+      ]
+    },
+    {
+      "query_poi": 793,
+      "query_cat": "Museum",
+      "neighbors": [
+        {
+          "poi": 506,
+          "cat": "Museum",
+          "cos": 0.9549
+        },
+        {
+          "poi": 1649,
+          "cat": "Art Museum",
+          "cos": 0.9087
+        },
+        {
+          "poi": 4688,
+          "cat": "Museum",
+          "cos": 0.9062
+        }
+      ]
+    },
+    {
+      "query_poi": 374,
+      "query_cat": "Park",
+      "neighbors": [
+        {
+          "poi": 314,
+          "cat": "Park",
+          "cos": 1.0
+        },
+        {
+          "poi": 2243,
+          "cat": "Park",
+          "cos": 1.0
+        },
+        {
+          "poi": 2299,
+          "cat": "Park",
+          "cos": 0.9873
+        }
+      ]
+    },
+    {
+      "query_poi": 3313,
+      "query_cat": "Subway",
+      "neighbors": [
+        {
+          "poi": 1581,
+          "cat": "Subway",
+          "cos": 1.0
+        },
+        {
+          "poi": 1803,
+          "cat": "Subway",
+          "cos": 1.0
+        },
+        {
+          "poi": 1265,
+          "cat": "Subway",
+          "cos": 1.0
+        }
+      ]
+    }
+  ]
+}

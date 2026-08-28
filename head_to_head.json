@@ -1,0 +1,97 @@
+{
+  "dataset": "Foursquare-NYC (LLM4POI, real)",
+  "protocol": "full-candidate ranking, official train/test split, session-based baselines",
+  "stats": {
+    "n_pois": 4980,
+    "n_users": 1047,
+    "n_train_trajs": 11022,
+    "n_train_checkins": 83228,
+    "avg_traj_len": 7.55,
+    "max_traj_len": 270,
+    "n_test_pairs": 1447,
+    "n_categories": 313,
+    "num_users_remapped": 1047,
+    "num_pois_remapped": 4980
+  },
+  "num_pois": 4980,
+  "num_test": 1447,
+  "results": {
+    "LLM-STKG (ours)": {
+      "Recall@5": 0.1292,
+      "NDCG@5": 0.0779,
+      "Recall@10": 0.1942,
+      "NDCG@10": 0.0865
+    },
+    "BPR-MF": {
+      "Recall@5": 0.376,
+      "NDCG@5": 0.2815,
+      "Recall@10": 0.4001,
+      "NDCG@10": 0.2849
+    },
+    "FPMC": {
+      "Recall@5": 0.0843,
+      "NDCG@5": 0.0634,
+      "Recall@10": 0.0981,
+      "NDCG@10": 0.0654
+    },
+    "LightGCN": {
+      "Recall@5": 0.3946,
+      "NDCG@5": 0.2539,
+      "Recall@10": 0.481,
+      "NDCG@10": 0.2657
+    },
+    "GRU-STGN": {
+      "Recall@5": 0.0035,
+      "NDCG@5": 0.0018,
+      "Recall@10": 0.0083,
+      "NDCG@10": 0.0024
+    },
+    "Popularity (Pop)": {
+      "Recall@5": 0.027,
+      "NDCG@5": 0.0155,
+      "Recall@10": 0.0401,
+      "NDCG@10": 0.0172
+    }
+  },
+  "cold_start(≤5)": {
+    "n": 280,
+    "results": {
+      "LLM-STKG (ours)": {
+        "Recall@5": 0.0036,
+        "NDCG@5": 0.0009,
+        "Recall@10": 0.0036,
+        "NDCG@10": 0.0009
+      },
+      "BPR-MF": {
+        "Recall@5": 0.1929,
+        "NDCG@5": 0.1311,
+        "Recall@10": 0.2179,
+        "NDCG@10": 0.1349
+      },
+      "FPMC": {
+        "Recall@5": 0.0357,
+        "NDCG@5": 0.0199,
+        "Recall@10": 0.0393,
+        "NDCG@10": 0.0205
+      },
+      "LightGCN": {
+        "Recall@5": 0.1929,
+        "NDCG@5": 0.1188,
+        "Recall@10": 0.2464,
+        "NDCG@10": 0.1256
+      },
+      "GRU-STGN": {
+        "Recall@5": 0.0,
+        "NDCG@5": 0.0,
+        "Recall@10": 0.0,
+        "NDCG@10": 0.0
+      },
+      "Popularity (Pop)": {
+        "Recall@5": 0.0,
+        "NDCG@5": 0.0,
+        "Recall@10": 0.0,
+        "NDCG@10": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "model": "LLM4POI-style (Qwen2.5-3B-Instruct, LoRA)",
+  "city": "ml1m",
+  "k_list": [
+    1,
+    5,
+    10
+  ],
+  "metrics": {
+    "Recall@1": 0.0295,
+    "NDCG@1": 0.0295,
+    "MRR@1": 0.0295,
+    "Recall@5": 0.114,
+    "NDCG@5": 0.0724,
+    "MRR@5": 0.0587,
+    "Recall@10": 0.1865,
+    "NDCG@10": 0.0955,
+    "MRR@10": 0.0681,
+    "MRR": 0.0828
+  },
+  "cold": null,
+  "n_test": 2000
+}

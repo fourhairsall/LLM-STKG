@@ -1,0 +1,37 @@
+{
+  "model": "LLM4POI-style (Qwen2.5-3B-Instruct, LoRA)",
+  "city": "steam200k",
+  "k_list": [
+    1,
+    5,
+    10
+  ],
+  "metrics": {
+    "Recall@1": 0.0222,
+    "NDCG@1": 0.0222,
+    "MRR@1": 0.0222,
+    "Recall@5": 0.0867,
+    "NDCG@5": 0.0558,
+    "MRR@5": 0.0456,
+    "Recall@10": 0.1465,
+    "NDCG@10": 0.075,
+    "MRR@10": 0.0534,
+    "MRR": 0.0635
+  },
+  "cold": {
+    "n": 225,
+    "metrics": {
+      "Recall@1": 0.0,
+      "NDCG@1": 0.0,
+      "MRR@1": 0.0,
+      "Recall@5": 0.0,
+      "NDCG@5": 0.0,
+      "MRR@5": 0.0,
+      "Recall@10": 0.0,
+      "NDCG@10": 0.0,
+      "MRR@10": 0.0,
+      "MRR": 0.0006
+    }
+  },
+  "n_test": 5216
+}

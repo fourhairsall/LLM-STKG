@@ -1,0 +1,102 @@
+{
+  "dataset": "Foursquare-NYC (LLM4POI, real)",
+  "protocol": "full-candidate ranking, official train/test split, session-based baselines",
+  "stats": {
+    "n_pois": 4980,
+    "n_users": 1047,
+    "n_train_trajs": 11022,
+    "n_train_checkins": 83228,
+    "avg_traj_len": 7.55,
+    "max_traj_len": 270,
+    "n_test_pairs": 1447,
+    "n_categories": 313,
+    "num_users_remapped": 1047,
+    "num_pois_remapped": 4980
+  },
+  "num_pois": 4980,
+  "num_test": 1447,
+  "results": {
+    "LLM-STKG (ours)": {
+      "Recall@5": 0.4264,
+      "NDCG@5": 0.2373,
+      "Recall@10": 0.5612,
+      "NDCG@10": 0.2558
+    },
+    "BPR-MF": {
+      "Recall@5": 0.3739,
+      "NDCG@5": 0.2768,
+      "Recall@10": 0.3953,
+      "NDCG@10": 0.2796
+    },
+    "FPMC": {
+      "Recall@5": 0.0912,
+      "NDCG@5": 0.0701,
+      "Recall@10": 0.1168,
+      "NDCG@10": 0.0734
+    },
+    "LightGCN": {
+      "Recall@5": 0.4126,
+      "NDCG@5": 0.2583,
+      "Recall@10": 0.5086,
+      "NDCG@10": 0.271
+    },
+    "GRU-STGN": {
+      "Recall@5": 0.0062,
+      "NDCG@5": 0.0047,
+      "Recall@10": 0.0117,
+      "NDCG@10": 0.0055
+    },
+    "Popularity (Pop)": {
+      "Recall@5": 0.027,
+      "NDCG@5": 0.0155,
+      "Recall@10": 0.0401,
+      "NDCG@10": 0.0172
+    }
+  },
+  "cold_start(≤5)": {
+    "n": 280,
+    "results": {
+      "LLM-STKG (ours)": {
+        "Recall@5": 0.2786,
+        "NDCG@5": 0.1339,
+        "Recall@10": 0.4429,
+        "NDCG@10": 0.1557
+      },
+      "BPR-MF": {
+        "Recall@5": 0.1714,
+        "NDCG@5": 0.1161,
+        "Recall@10": 0.1857,
+        "NDCG@10": 0.1177
+      },
+      "FPMC": {
+        "Recall@5": 0.0321,
+        "NDCG@5": 0.0224,
+        "Recall@10": 0.05,
+        "NDCG@10": 0.0251
+      },
+      "LightGCN": {
+        "Recall@5": 0.1857,
+        "NDCG@5": 0.1069,
+        "Recall@10": 0.2643,
+        "NDCG@10": 0.1175
+      },
+      "GRU-STGN": {
+        "Recall@5": 0.0,
+        "NDCG@5": 0.0,
+        "Recall@10": 0.0,
+        "NDCG@10": 0.0
+      },
+      "Popularity (Pop)": {
+        "Recall@5": 0.0,
+        "NDCG@5": 0.0,
+        "Recall@10": 0.0,
+        "NDCG@10": 0.0
+      }
+    }
+  },
+  "cold_poi_strict": {
+    "n": 0,
+    "ratio": 0.0,
+    "results": {}
+  }
+}

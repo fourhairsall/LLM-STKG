@@ -1,0 +1,134 @@
+[
+  {
+    "dataset": "foursquare",
+    "n_poi": 4980,
+    "n_sessions": 10896,
+    "hist_len_mean": 4.84,
+    "topk": 10,
+    "metrics": {
+      "raw": {
+        "jaccard_mean": 0.002476334833317066,
+        "hub_cover": 0.031148576531834716,
+        "indeg_gini": 0.4993175385110111,
+        "uniq_ratio": 0.9558232931726908,
+        "mean_deg": 9.220526210082346,
+        "n_active": 4979
+      },
+      "cosine": {
+        "jaccard_mean": 0.0011430864184434526,
+        "hub_cover": 0.009431701844954149,
+        "indeg_gini": 0.3004368997478075,
+        "uniq_ratio": 0.9985943775100402,
+        "mean_deg": 9.220526210082346,
+        "n_active": 4979
+      },
+      "pmi": {
+        "jaccard_mean": 0.0013686304643860815,
+        "hub_cover": 0.01248121283408482,
+        "indeg_gini": 0.31388798129633266,
+        "uniq_ratio": 0.998995983935743,
+        "mean_deg": 9.220526210082346,
+        "n_active": 4979
+      }
+    }
+  },
+  {
+    "dataset": "gowalla",
+    "n_poi": 1500,
+    "n_sessions": 2419,
+    "hist_len_mean": 20.89,
+    "topk": 10,
+    "metrics": {
+      "raw": {
+        "jaccard_mean": 0.0396392430971133,
+        "hub_cover": 0.18526521223949258,
+        "indeg_gini": 0.7833669756743571,
+        "uniq_ratio": 0.71,
+        "mean_deg": 9.720189701897018,
+        "n_active": 1476
+      },
+      "cosine": {
+        "jaccard_mean": 0.008033554674562479,
+        "hub_cover": 0.056388095072140515,
+        "indeg_gini": 0.4444929718175694,
+        "uniq_ratio": 0.9586666666666667,
+        "mean_deg": 9.720189701897018,
+        "n_active": 1476
+      },
+      "pmi": {
+        "jaccard_mean": 0.0077661686799982985,
+        "hub_cover": 0.047814874189726075,
+        "indeg_gini": 0.506285774029414,
+        "uniq_ratio": 0.9166666666666666,
+        "mean_deg": 9.720189701897018,
+        "n_active": 1476
+      }
+    }
+  },
+  {
+    "dataset": "steam",
+    "n_poi": 600,
+    "n_sessions": 2498,
+    "hist_len_mean": 76.39,
+    "topk": 10,
+    "metrics": {
+      "raw": {
+        "jaccard_mean": 0.5527237617301229,
+        "hub_cover": 0.7755,
+        "indeg_gini": 0.9766155555555556,
+        "uniq_ratio": 0.115,
+        "mean_deg": 10.0,
+        "n_active": 600
+      },
+      "cosine": {
+        "jaccard_mean": 0.25913878176589317,
+        "hub_cover": 0.5448333333333333,
+        "indeg_gini": 0.9221127777777778,
+        "uniq_ratio": 0.455,
+        "mean_deg": 10.0,
+        "n_active": 600
+      },
+      "pmi": {
+        "jaccard_mean": 0.029485874663340225,
+        "hub_cover": 0.147,
+        "indeg_gini": 0.6468577777777778,
+        "uniq_ratio": 0.8066666666666666,
+        "mean_deg": 10.0,
+        "n_active": 600
+      }
+    }
+  },
+  {
+    "dataset": "movielens-1m",
+    "n_poi": 800,
+    "n_sessions": 2000,
+    "hist_len_mean": 234.17,
+    "topk": 10,
+    "metrics": {
+      "raw": {
+        "jaccard_mean": 0.31599057302863837,
+        "hub_cover": 0.6065,
+        "indeg_gini": 0.9702178125,
+        "uniq_ratio": 0.165,
+        "mean_deg": 10.0,
+        "n_active": 800
+      },
+      "cosine": {
+        "jaccard_mean": 0.026092199817258185,
+        "hub_cover": 0.13125,
+        "indeg_gini": 0.6491996875000001,
+        "uniq_ratio": 0.84625,
+        "mean_deg": 10.0,
+        "n_active": 800
+      },
+      "pmi": {
+        "jaccard_mean": 0.01786757757090436,
+        "hub_cover": 0.06775,
+        "indeg_gini": 0.6241953124999999,
+        "uniq_ratio": 0.74125,
+        "mean_deg": 10.0,
+        "n_active": 800
+      }
+    }
+  }
+]

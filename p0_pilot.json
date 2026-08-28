@@ -1,0 +1,129 @@
+{
+  "started": "17:46:03",
+  "jobs": {
+    "bs256_lr2e3_ep12": {
+      "status": "ok",
+      "seconds": 2900.1,
+      "ours": {
+        "Recall@5": 0.217,
+        "NDCG@5": 0.1194,
+        "Recall@10": 0.2909,
+        "NDCG@10": 0.1291
+      },
+      "train_diag": {
+        "poi_emb_grad_norm_mean_last_epoch": 0.0068673025709725,
+        "poi_repr_var_mean": 2.759568929672241,
+        "poi_repr_pairwise_cos_mean": 0.6075124144554138,
+        "n_params": 4503061,
+        "n_trainable_params": 4503061,
+        "train_seconds": 2862.4,
+        "epochs": 12,
+        "homo_gnn": false,
+        "use_residual": true,
+        "session_pool": "mean",
+        "scorer": "dot",
+        "semantic_sim_thr": 0.9,
+        "max_degree": 10,
+        "batch_size": 256,
+        "lr": 0.002,
+        "neg_samples": 10,
+        "loss_type": "ce",
+        "kg_edges": {
+          "geo": 59304,
+          "category": 77226,
+          "semantic": 61026,
+          "covisit": 23586
+        }
+      },
+      "ours_cold": {
+        "Recall@5": 0.0643,
+        "NDCG@5": 0.0346,
+        "Recall@10": 0.1286,
+        "NDCG@10": 0.0429
+      }
+    },
+    "bs256_lr3e3_ep12": {
+      "status": "ok",
+      "seconds": 2880.1,
+      "ours": {
+        "Recall@5": 0.2985,
+        "NDCG@5": 0.1687,
+        "Recall@10": 0.4077,
+        "NDCG@10": 0.1836
+      },
+      "train_diag": {
+        "poi_emb_grad_norm_mean_last_epoch": 0.004752049207779523,
+        "poi_repr_var_mean": 9.329506874084473,
+        "poi_repr_pairwise_cos_mean": 0.5940649509429932,
+        "n_params": 4503061,
+        "n_trainable_params": 4503061,
+        "train_seconds": 2859.4,
+        "epochs": 12,
+        "homo_gnn": false,
+        "use_residual": true,
+        "session_pool": "mean",
+        "scorer": "dot",
+        "semantic_sim_thr": 0.9,
+        "max_degree": 10,
+        "batch_size": 256,
+        "lr": 0.003,
+        "neg_samples": 10,
+        "loss_type": "ce",
+        "kg_edges": {
+          "geo": 59304,
+          "category": 77226,
+          "semantic": 61026,
+          "covisit": 23586
+        }
+      },
+      "ours_cold": {
+        "Recall@5": 0.1929,
+        "NDCG@5": 0.0952,
+        "Recall@10": 0.2571,
+        "NDCG@10": 0.1042
+      }
+    },
+    "bs1024_lr4e3_ep30": {
+      "status": "ok",
+      "seconds": 1960.1,
+      "ours": {
+        "Recall@5": 0.376,
+        "NDCG@5": 0.2099,
+        "Recall@10": 0.4755,
+        "NDCG@10": 0.2231
+      },
+      "train_diag": {
+        "poi_emb_grad_norm_mean_last_epoch": 0.0025503150167756937,
+        "poi_repr_var_mean": 3.0264241695404053,
+        "poi_repr_pairwise_cos_mean": 0.5007668137550354,
+        "n_params": 4503061,
+        "n_trainable_params": 4503061,
+        "train_seconds": 1938.7,
+        "epochs": 30,
+        "homo_gnn": false,
+        "use_residual": true,
+        "session_pool": "mean",
+        "scorer": "dot",
+        "semantic_sim_thr": 0.9,
+        "max_degree": 10,
+        "batch_size": 1024,
+        "lr": 0.004,
+        "neg_samples": 10,
+        "loss_type": "ce",
+        "kg_edges": {
+          "geo": 59304,
+          "category": 77226,
+          "semantic": 61026,
+          "covisit": 23586
+        }
+      },
+      "ours_cold": {
+        "Recall@5": 0.2214,
+        "NDCG@5": 0.1025,
+        "Recall@10": 0.3107,
+        "NDCG@10": 0.1147
+      }
+    }
+  },
+  "finished": "18:34:23"
+}

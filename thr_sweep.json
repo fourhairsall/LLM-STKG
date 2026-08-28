@@ -1,0 +1,280 @@
+{
+  "jobs": {
+    "t_thr_0.80_s42": {
+      "status": "ok",
+      "seconds": 705.1,
+      "out_json": "t_thr_0.80_s42.json",
+      "finished": "08-23 21:34:45",
+      "ours": {
+        "Recall@5": 0.5252,
+        "NDCG@5": 0.3811,
+        "MRR@5": 0.3332,
+        "Recall@10": 0.6448,
+        "NDCG@10": 0.4201,
+        "MRR@10": 0.3495,
+        "MRR": 0.3581
+      },
+      "cfg": {
+        "semantic_sim_thr": 0.8,
+        "max_degree": 10,
+        "use_kg_channel": true,
+        "prior_channels": [
+          "cnt",
+          "rec",
+          "pop"
+        ],
+        "gate_mode": "context"
+      },
+      "kg_edges": {
+        "geo": 59304,
+        "category": 77226,
+        "semantic": 64664,
+        "covisit": 23586
+      },
+      "train_seconds": 669.1,
+      "cold_n": 280,
+      "ours_cold": {
+        "Recall@5": 0.3393,
+        "NDCG@5": 0.2144,
+        "MRR@5": 0.1729,
+        "Recall@10": 0.5143,
+        "NDCG@10": 0.2713,
+        "MRR@10": 0.1965,
+        "MRR": 0.209
+      }
+    },
+    "t_thr_0.85_s42": {
+      "status": "ok",
+      "seconds": 705.1,
+      "out_json": "t_thr_0.85_s42.json",
+      "finished": "08-23 21:34:45",
+      "ours": {
+        "Recall@5": 0.5259,
+        "NDCG@5": 0.381,
+        "MRR@5": 0.3329,
+        "Recall@10": 0.6448,
+        "NDCG@10": 0.4194,
+        "MRR@10": 0.3488,
+        "MRR": 0.3573
+      },
+      "cfg": {
+        "semantic_sim_thr": 0.85,
+        "max_degree": 10,
+        "use_kg_channel": true,
+        "prior_channels": [
+          "cnt",
+          "rec",
+          "pop"
+        ],
+        "gate_mode": "context"
+      },
+      "kg_edges": {
+        "geo": 59304,
+        "category": 77226,
+        "semantic": 62828,
+        "covisit": 23586
+      },
+      "train_seconds": 669.3,
+      "cold_n": 280,
+      "ours_cold": {
+        "Recall@5": 0.3357,
+        "NDCG@5": 0.2107,
+        "MRR@5": 0.1693,
+        "Recall@10": 0.5071,
+        "NDCG@10": 0.2658,
+        "MRR@10": 0.1918,
+        "MRR": 0.2045
+      }
+    },
+    "t_thr_0.88_s42": {
+      "status": "ok",
+      "seconds": 705.1,
+      "out_json": "t_thr_0.88_s42.json",
+      "finished": "08-23 21:34:45",
+      "ours": {
+        "Recall@5": 0.5273,
+        "NDCG@5": 0.383,
+        "MRR@5": 0.335,
+        "Recall@10": 0.6469,
+        "NDCG@10": 0.4218,
+        "MRR@10": 0.3512,
+        "MRR": 0.3596
+      },
+      "cfg": {
+        "semantic_sim_thr": 0.88,
+        "max_degree": 10,
+        "use_kg_channel": true,
+        "prior_channels": [
+          "cnt",
+          "rec",
+          "pop"
+        ],
+        "gate_mode": "context"
+      },
+      "kg_edges": {
+        "geo": 59304,
+        "category": 77226,
+        "semantic": 61662,
+        "covisit": 23586
+      },
+      "train_seconds": 667.7,
+      "cold_n": 280,
+      "ours_cold": {
+        "Recall@5": 0.3357,
+        "NDCG@5": 0.2115,
+        "MRR@5": 0.1704,
+        "Recall@10": 0.5143,
+        "NDCG@10": 0.2697,
+        "MRR@10": 0.1947,
+        "MRR": 0.2074
+      }
+    },
+    "t_thr_0.90_s42": {
+      "status": "ok",
+      "seconds": 705.1,
+      "out_json": "t_thr_0.90_s42.json",
+      "finished": "08-23 21:34:45",
+      "ours": {
+        "Recall@5": 0.5245,
+        "NDCG@5": 0.3811,
+        "MRR@5": 0.3335,
+        "Recall@10": 0.6469,
+        "NDCG@10": 0.4209,
+        "MRR@10": 0.35,
+        "MRR": 0.3582
+      },
+      "cfg": {
+        "semantic_sim_thr": 0.9,
+        "max_degree": 10,
+        "use_kg_channel": true,
+        "prior_channels": [
+          "cnt",
+          "rec",
+          "pop"
+        ],
+        "gate_mode": "context"
+      },
+      "kg_edges": {
+        "geo": 59304,
+        "category": 77226,
+        "semantic": 61026,
+        "covisit": 23586
+      },
+      "train_seconds": 669.6,
+      "cold_n": 280,
+      "ours_cold": {
+        "Recall@5": 0.3143,
+        "NDCG@5": 0.2005,
+        "MRR@5": 0.1625,
+        "Recall@10": 0.5,
+        "NDCG@10": 0.2619,
+        "MRR@10": 0.1886,
+        "MRR": 0.2017
+      }
+    },
+    "t_thr_0.92_s42": {
+      "status": "ok",
+      "seconds": 420.0,
+      "out_json": "t_thr_0.92_s42.json",
+      "finished": "08-23 21:41:45",
+      "ours": {
+        "Recall@5": 0.528,
+        "NDCG@5": 0.3826,
+        "MRR@5": 0.3342,
+        "Recall@10": 0.6441,
+        "NDCG@10": 0.4202,
+        "MRR@10": 0.3498,
+        "MRR": 0.358
+      },
+      "cfg": {
+        "semantic_sim_thr": 0.92,
+        "max_degree": 10,
+        "use_kg_channel": true,
+        "prior_channels": [
+          "cnt",
+          "rec",
+          "pop"
+        ],
+        "gate_mode": "context"
+      },
+      "kg_edges": {
+        "geo": 59304,
+        "category": 77226,
+        "semantic": 60378,
+        "covisit": 23586
+      },
+      "train_seconds": 403.2,
+      "cold_n": 280,
+      "ours_cold": {
+        "Recall@5": 0.3429,
+        "NDCG@5": 0.2165,
+        "MRR@5": 0.1746,
+        "Recall@10": 0.5036,
+        "NDCG@10": 0.2694,
+        "MRR@10": 0.1971,
+        "MRR": 0.2095
+      }
+    },
+    "t_thr_0.95_s42": {
+      "status": "ok",
+      "seconds": 420.1,
+      "out_json": "t_thr_0.95_s42.json",
+      "finished": "08-23 21:41:45",
+      "ours": {
+        "Recall@5": 0.5245,
+        "NDCG@5": 0.383,
+        "MRR@5": 0.336,
+        "Recall@10": 0.6475,
+        "NDCG@10": 0.423,
+        "MRR@10": 0.3527,
+        "MRR": 0.3608
+      },
+      "cfg": {
+        "semantic_sim_thr": 0.95,
+        "max_degree": 10,
+        "use_kg_channel": true,
+        "prior_channels": [
+          "cnt",
+          "rec",
+          "pop"
+        ],
+        "gate_mode": "context"
+      },
+      "kg_edges": {
+        "geo": 59304,
+        "category": 77226,
+        "semantic": 58948,
+        "covisit": 23586
+      },
+      "train_seconds": 403.2,
+      "cold_n": 280,
+      "ours_cold": {
+        "Recall@5": 0.3321,
+        "NDCG@5": 0.2112,
+        "MRR@5": 0.1712,
+        "Recall@10": 0.525,
+        "NDCG@10": 0.2743,
+        "MRR@10": 0.1977,
+        "MRR": 0.2093
+      }
+    }
+  },
+  "config": {
+    "bs": 1024,
+    "lr": "4e-3",
+    "epochs": 30,
+    "max_degree": 10,
+    "sem_thr_values": [
+      0.8,
+      0.85,
+      0.88,
+      0.9,
+      0.92,
+      0.95
+    ],
+    "seed": 42,
+    "note": "P1-7 empirical threshold sweep; only --sem_thr varies vs production ours",
+    "started": "08-23 21:23:00"
+  },
+  "finished": "08-23 21:41:45"
+}

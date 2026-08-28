@@ -1,0 +1,205 @@
+{
+  "meta": [
+    {
+      "dataset": "Steam",
+      "full_name": "Steam (SASRec benchmark)",
+      "text_mode": "w/o LLM-text (behavior + structure only)",
+      "num_pois": 600,
+      "num_test": 2498,
+      "revisit_test": 0.0,
+      "hist_len_test": 74.5,
+      "protocol": "full-candidate ranking, official train/test split, session-based baselines",
+      "mask_history": true,
+      "mask_history_mode": "auto",
+      "train_sample_ratio": 1.0,
+      "train_samples_used": 188335,
+      "no_graph": false
+    },
+    {
+      "dataset": "Gowalla",
+      "full_name": "Gowalla (SNAP check-ins)",
+      "text_mode": "w/o LLM-text (behavior + structure only)",
+      "num_pois": 1500,
+      "num_test": 2499,
+      "revisit_test": 0.6759,
+      "hist_len_test": 58.4,
+      "protocol": "full-candidate ranking, official train/test split, session-based baselines",
+      "mask_history": false,
+      "mask_history_mode": "auto",
+      "train_sample_ratio": 1.0,
+      "train_samples_used": 167746,
+      "no_graph": false
+    },
+    {
+      "dataset": "ML-1M",
+      "full_name": "MovieLens-1M (SASRec benchmark)",
+      "text_mode": "w/o LLM-text (behavior + structure only)",
+      "num_pois": 800,
+      "num_test": 2000,
+      "revisit_test": 0.0,
+      "hist_len_test": 174.5,
+      "protocol": "full-candidate ranking, official train/test split, session-based baselines",
+      "mask_history": true,
+      "mask_history_mode": "auto",
+      "train_sample_ratio": 0.4074,
+      "train_samples_used": 190000,
+      "no_graph": false
+    }
+  ],
+  "labels": [
+    "Steam",
+    "Gowalla",
+    "ML-1M"
+  ],
+  "models": [
+    "LLM-STKG (ours)",
+    "SASRec",
+    "LightGCN",
+    "BPR-MF",
+    "FPMC",
+    "GRU-STGN",
+    "Popularity (Pop)"
+  ],
+  "metrics": {
+    "LLM-STKG (ours)": {
+      "Steam": {
+        "Recall@5": 0.0504,
+        "Recall@10": 0.0809,
+        "NDCG@5": 0.0318,
+        "NDCG@10": 0.0416
+      },
+      "Gowalla": {
+        "Recall@5": 0.5566,
+        "Recall@10": 0.6555,
+        "NDCG@5": 0.4352,
+        "NDCG@10": 0.4672
+      },
+      "ML-1M": {
+        "Recall@5": 0.0205,
+        "Recall@10": 0.041,
+        "NDCG@5": 0.0125,
+        "NDCG@10": 0.019
+      }
+    },
+    "SASRec": {
+      "Steam": {
+        "Recall@5": 0.0484,
+        "Recall@10": 0.0801,
+        "NDCG@5": 0.0366,
+        "NDCG@10": 0.0468
+      },
+      "Gowalla": {
+        "Recall@5": 0.4426,
+        "Recall@10": 0.5374,
+        "NDCG@5": 0.3475,
+        "NDCG@10": 0.3783
+      },
+      "ML-1M": {
+        "Recall@5": 0.091,
+        "Recall@10": 0.142,
+        "NDCG@5": 0.06,
+        "NDCG@10": 0.0763
+      }
+    },
+    "LightGCN": {
+      "Steam": {
+        "Recall@5": 0.0468,
+        "Recall@10": 0.0813,
+        "NDCG@5": 0.0295,
+        "NDCG@10": 0.0406
+      },
+      "Gowalla": {
+        "Recall@5": 0.389,
+        "Recall@10": 0.467,
+        "NDCG@5": 0.3086,
+        "NDCG@10": 0.3338
+      },
+      "ML-1M": {
+        "Recall@5": 0.02,
+        "Recall@10": 0.035,
+        "NDCG@5": 0.013,
+        "NDCG@10": 0.0178
+      }
+    },
+    "BPR-MF": {
+      "Steam": {
+        "Recall@5": 0.006,
+        "Recall@10": 0.0172,
+        "NDCG@5": 0.0038,
+        "NDCG@10": 0.0073
+      },
+      "Gowalla": {
+        "Recall@5": 0.4154,
+        "Recall@10": 0.4502,
+        "NDCG@5": 0.3558,
+        "NDCG@10": 0.3671
+      },
+      "ML-1M": {
+        "Recall@5": 0.009,
+        "Recall@10": 0.0165,
+        "NDCG@5": 0.0048,
+        "NDCG@10": 0.0072
+      }
+    },
+    "FPMC": {
+      "Steam": {
+        "Recall@5": 0.016,
+        "Recall@10": 0.0272,
+        "NDCG@5": 0.01,
+        "NDCG@10": 0.0136
+      },
+      "Gowalla": {
+        "Recall@5": 0.3153,
+        "Recall@10": 0.3465,
+        "NDCG@5": 0.2746,
+        "NDCG@10": 0.2848
+      },
+      "ML-1M": {
+        "Recall@5": 0.0145,
+        "Recall@10": 0.0285,
+        "NDCG@5": 0.0085,
+        "NDCG@10": 0.013
+      }
+    },
+    "GRU-STGN": {
+      "Steam": {
+        "Recall@5": 0.0689,
+        "Recall@10": 0.1097,
+        "NDCG@5": 0.044,
+        "NDCG@10": 0.0571
+      },
+      "Gowalla": {
+        "Recall@5": 0.1565,
+        "Recall@10": 0.2393,
+        "NDCG@5": 0.1018,
+        "NDCG@10": 0.1284
+      },
+      "ML-1M": {
+        "Recall@5": 0.166,
+        "Recall@10": 0.243,
+        "NDCG@5": 0.1133,
+        "NDCG@10": 0.1382
+      }
+    },
+    "Popularity (Pop)": {
+      "Steam": {
+        "Recall@5": 0.0452,
+        "Recall@10": 0.0725,
+        "NDCG@5": 0.029,
+        "NDCG@10": 0.0379
+      },
+      "Gowalla": {
+        "Recall@5": 0.028,
+        "Recall@10": 0.0572,
+        "NDCG@5": 0.0169,
+        "NDCG@10": 0.0265
+      },
+      "ML-1M": {
+        "Recall@5": 0.014,
+        "Recall@10": 0.0315,
+        "NDCG@5": 0.0086,
+        "NDCG@10": 0.0141
+      }
+    }
+  }
+}

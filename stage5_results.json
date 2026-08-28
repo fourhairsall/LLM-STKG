@@ -1,0 +1,106 @@
+{
+  "source": "surrogate:Foursquare-NYC-schema",
+  "num_pois": 900,
+  "num_train": 23006,
+  "num_val": 5808,
+  "LLM-STKG (ours)": {
+    "Recall@5": 0.0337,
+    "NDCG@5": 0.0159,
+    "Recall@10": 0.0654,
+    "NDCG@10": 0.02
+  },
+  "BPR-MF": {
+    "Recall@5": 0.004,
+    "NDCG@5": 0.0018,
+    "Recall@10": 0.0077,
+    "NDCG@10": 0.0023
+  },
+  "FPMC": {
+    "Recall@5": 0.0046,
+    "NDCG@5": 0.0019,
+    "Recall@10": 0.0096,
+    "NDCG@10": 0.0025
+  },
+  "LightGCN": {
+    "Recall@5": 0.0043,
+    "NDCG@5": 0.0018,
+    "Recall@10": 0.0093,
+    "NDCG@10": 0.0025
+  },
+  "GRU-STGN": {
+    "Recall@5": 0.0077,
+    "NDCG@5": 0.0038,
+    "Recall@10": 0.0152,
+    "NDCG@10": 0.0047
+  },
+  "cold_start@5interactions": {
+    "n": 5808,
+    "LLM-STKG (ours)": {
+      "Recall@5": 0.0337,
+      "NDCG@5": 0.0158,
+      "Recall@10": 0.0651,
+      "NDCG@10": 0.0199
+    },
+    "BPR-MF": {
+      "Recall@5": 0.004,
+      "NDCG@5": 0.0018,
+      "Recall@10": 0.0077,
+      "NDCG@10": 0.0023
+    },
+    "FPMC": {
+      "Recall@5": 0.0046,
+      "NDCG@5": 0.0019,
+      "Recall@10": 0.0096,
+      "NDCG@10": 0.0025
+    },
+    "LightGCN": {
+      "Recall@5": 0.0043,
+      "NDCG@5": 0.0018,
+      "Recall@10": 0.0093,
+      "NDCG@10": 0.0025
+    },
+    "GRU-STGN": {
+      "Recall@5": 0.0077,
+      "NDCG@5": 0.0038,
+      "Recall@10": 0.0152,
+      "NDCG@10": 0.0047
+    }
+  },
+  "SOTA_literature": {
+    "GETNext (KDD 2022)": {
+      "dataset": "Foursquare-NYC",
+      "metric": "Recall@10",
+      "value": 0.298,
+      "protocol": "原论文报告值（其划分）",
+      "note": "广泛引用锚点；TKY≈0.247"
+    },
+    "STAN (AAAI 2019)": {
+      "dataset": "Foursquare-NYC",
+      "metric": "Recall@10",
+      "value": null,
+      "protocol": "原论文报告值（其划分）",
+      "note": "精确值待从原表誊录"
+    },
+    "CoMaPOI (SIGIR 2025)": {
+      "dataset": "Foursquare-NYC/TKY",
+      "metric": "Recall@10",
+      "value": null,
+      "protocol": "原论文报告值（其划分）",
+      "note": "LLM 多智能体；相对 GETNext 提升见原文"
+    },
+    "CaST-POI (2026)": {
+      "dataset": "Foursquare-NYC/TKY",
+      "metric": "Recall@10",
+      "value": null,
+      "protocol": "原论文报告值（其划分）",
+      "note": "候选条件时空建模；2026 时空 SOTA"
+    },
+    "RALLM-POI (PRICAI 2025)": {
+      "dataset": "Foursquare-NYC/TKY",
+      "metric": "Recall@10",
+      "value": null,
+      "protocol": "原论文报告值（其划分）",
+      "note": "检索增强 LLM + 地理重排"
+    }
+  }
+}

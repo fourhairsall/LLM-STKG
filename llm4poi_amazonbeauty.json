@@ -1,0 +1,37 @@
+{
+  "model": "LLM4POI-style (Qwen2.5-3B-Instruct, LoRA)",
+  "city": "amazon_beauty",
+  "k_list": [
+    1,
+    5,
+    10
+  ],
+  "metrics": {
+    "Recall@1": 0.0015,
+    "NDCG@1": 0.0015,
+    "MRR@1": 0.0015,
+    "Recall@5": 0.0074,
+    "NDCG@5": 0.0044,
+    "MRR@5": 0.0034,
+    "Recall@10": 0.0147,
+    "NDCG@10": 0.0066,
+    "MRR@10": 0.0043,
+    "MRR": 0.0104
+  },
+  "cold": {
+    "n": 230,
+    "metrics": {
+      "Recall@1": 0.0,
+      "NDCG@1": 0.0,
+      "MRR@1": 0.0,
+      "Recall@5": 0.0,
+      "NDCG@5": 0.0,
+      "MRR@5": 0.0,
+      "Recall@10": 0.0,
+      "NDCG@10": 0.0,
+      "MRR@10": 0.0,
+      "MRR": 0.0058
+    }
+  },
+  "n_test": 678
+}

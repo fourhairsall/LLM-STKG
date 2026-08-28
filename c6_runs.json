@@ -1,0 +1,52 @@
+{
+  "jobs": {
+    "c6_full_s42": {
+      "status": "running",
+      "pid": 25984,
+      "started": "08-01 19:09:01"
+    },
+    "c6_full_s123": {
+      "status": "running",
+      "pid": 5680,
+      "started": "08-01 19:09:01"
+    },
+    "c6_full_s777": {
+      "status": "running",
+      "pid": 14044,
+      "started": "08-01 19:09:01"
+    },
+    "c6_full_s2024": {
+      "status": "running",
+      "pid": 18012,
+      "started": "08-01 19:09:01"
+    },
+    "c6_full_s99": {
+      "status": "running",
+      "pid": 14712,
+      "started": "08-01 19:09:01"
+    },
+    "c6_nokg_s42": {
+      "status": "running",
+      "pid": 1636,
+      "started": "08-01 19:09:01"
+    },
+    "c6_nokg_s123": {
+      "status": "running",
+      "pid": 26636,
+      "started": "08-01 19:09:01"
+    },
+    "c6_nokg_s777": {
+      "status": "running",
+      "pid": 10868,
+      "started": "08-01 19:09:01"
+    }
+  },
+  "config": {
+    "bs": 1024,
+    "lr": "4e-3",
+    "epochs": 30,
+    "max_degree": 10,
+    "note": "C6 prior channels + context gate",
+    "started": "08-01 19:09:01"
+  }
+}

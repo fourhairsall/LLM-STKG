@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{跨数据集全候选排名对比（Recall@10）。MovieLens-1M / Gowalla / Steam 上物品无可用文本，统一以 \emph{w/o LLM-text} 模式评测；全候选 Recall 与候选空间大小强相关，仅同列内部可比。}
+\label{tab:cross-dataset}
+\begin{tabular}{lccc}
+\toprule
+模型 & Steam & Gowalla & ML-1M \\
+\midrule
+LLM-STKG (ours) & 0.0809 & \textbf{0.6555} & 0.0410 \\
+SASRec & 0.0801 & 0.5374 & 0.1420 \\
+LightGCN & 0.0813 & 0.4670 & 0.0350 \\
+BPR-MF & 0.0172 & 0.4502 & 0.0165 \\
+FPMC & 0.0272 & 0.3465 & 0.0285 \\
+GRU-STGN & \textbf{0.1097} & 0.2393 & \textbf{0.2430} \\
+Popularity (Pop) & 0.0725 & 0.0572 & 0.0315 \\
+\bottomrule
+\end{tabular}
+\end{table}

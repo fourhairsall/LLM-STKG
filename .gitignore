@@ -1,0 +1,36 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# ---- Logs / stdout-stderr traces (do NOT upload) ----
+*.log
+*.out
+*.lock
+*.bak
+
+# ---- Large model weights & caches (download from public sources) ----
+# 19 GB of mixed checkpoints
+models/
+# ~8 GB LoRA adapters for the generative baselines
+*_adapter/
+# 733 MB local BGE encoder (public: BAAI/bge-base-en-v1.5)
+bge_model/
+# HuggingFace hub cache (contains the full BGE weights)
+.hf_cache/
+# BGE embedding caches (regenerable)
+*.npy
+# generative-baseline score dumps
+*.npz
+
+# ---- Scratch / debug ----
+pngcheck/
+_baseline_ranks_trajectory_OLD.json
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

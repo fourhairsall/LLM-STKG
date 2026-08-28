@@ -1,0 +1,72 @@
+{
+  "rrf_k": 60,
+  "subsets": {
+    "all": {
+      "n": 1447,
+      "R@10_ours": 0.4755,
+      "R@10_HF": 0.6275,
+      "both_hit": 653,
+      "ours_only": 35,
+      "hf_only": 255,
+      "neither": 504,
+      "oracle_union_R@10": 0.6517,
+      "complementarity": 0.0371
+    },
+    "revisit": {
+      "n": 1096,
+      "R@10_ours": 0.6168,
+      "R@10_HF": 0.8257,
+      "both_hit": 652,
+      "ours_only": 24,
+      "hf_only": 253,
+      "neither": 167,
+      "oracle_union_R@10": 0.8476,
+      "complementarity": 0.0258
+    },
+    "novel": {
+      "n": 351,
+      "R@10_ours": 0.0342,
+      "R@10_HF": 0.0085,
+      "both_hit": 1,
+      "ours_only": 11,
+      "hf_only": 2,
+      "neither": 337,
+      "oracle_union_R@10": 0.0399,
+      "complementarity": 0.7857
+    },
+    "cold": {
+      "n": 280,
+      "R@10_ours": 0.3143,
+      "R@10_HF": 0.45,
+      "both_hit": 76,
+      "ours_only": 12,
+      "hf_only": 50,
+      "neither": 142,
+      "oracle_union_R@10": 0.4929,
+      "complementarity": 0.087
+    },
+    "novel_cold": {
+      "n": 75,
+      "R@10_ours": 0.0,
+      "R@10_HF": 0.0,
+      "both_hit": 0,
+      "ours_only": 0,
+      "hf_only": 0,
+      "neither": 75,
+      "oracle_union_R@10": 0.0,
+      "complementarity": 0.0
+    },
+    "revisit_cold": {
+      "n": 205,
+      "R@10_ours": 0.4293,
+      "R@10_HF": 0.6146,
+      "both_hit": 76,
+      "ours_only": 12,
+      "hf_only": 50,
+      "neither": 67,
+      "oracle_union_R@10": 0.6732,
+      "complementarity": 0.087
+    }
+  },
+  "rrf_target_score_gain_mean": 0.8864
+}

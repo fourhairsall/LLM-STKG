@@ -1,0 +1,15 @@
+# Core deep-learning stack
+torch>=1.13
+numpy
+scipy
+pandas
+scikit-learn
+
+# LLM / embeddings
+transformers
+sentencepiece
+huggingface-hub
+
+# Utilities
+matplotlib
+tqdm

@@ -1,0 +1,88 @@
+{
+  "dataset": "steam",
+  "epochs": 6,
+  "zero_param_floor": {
+    "protocol": "mask_hist=ON  (revisit 0.0000)",
+    "Random": 0.0212,
+    "Pop": 0.0725,
+    "ItemKNN": 0.0809
+  },
+  "arms": [
+    {
+      "arm": "dot_mean_4e3",
+      "scorer": "dot",
+      "pool": "mean",
+      "lr": "4e-3",
+      "returncode": 0,
+      "loss_first": 2.4797,
+      "loss_last": 2.2092,
+      "loss_curve": [
+        2.4797,
+        2.2096,
+        2.2101,
+        2.2114,
+        2.2092,
+        2.2092
+      ],
+      "Recall@5": 0.0456,
+      "Recall@10": 0.0729,
+      "NDCG@10": 0.038,
+      "mask_history": true,
+      "revisit_ratio_test": 0.0
+    },
+    {
+      "arm": "dot_gru_4e3",
+      "scorer": "dot",
+      "pool": "gru",
+      "lr": "4e-3",
+      "returncode": 0,
+      "loss_first": 2.4933,
+      "loss_last": 2.2083,
+      "loss_curve": [
+        2.4933,
+        2.2089,
+        2.2093,
+        2.2091,
+        2.2083,
+        2.2083
+      ],
+      "Recall@5": 0.0456,
+      "Recall@10": 0.0725,
+      "NDCG@10": 0.0379,
+      "mask_history": true,
+      "revisit_ratio_test": 0.0
+    },
+    {
+      "arm": "dot_gru_1e3",
+      "scorer": "dot",
+      "pool": "gru",
+      "lr": "1e-3",
+      "returncode": 0,
+      "loss_first": 3.1277,
+      "loss_last": 2.208,
+      "loss_curve": [
+        3.1277,
+        2.2097,
+        2.2096,
+        2.2091,
+        2.2083,
+        2.208
+      ],
+      "Recall@5": 0.046,
+      "Recall@10": 0.0725,
+      "NDCG@10": 0.0372,
+      "mask_history": true,
+      "revisit_ratio_test": 0.0
+    },
+    {
+      "arm": "dot_mean_1e3",
+      "scorer": "dot",
+      "pool": "mean",
+      "lr": "1e-3",
+      "returncode": 3221225794,
+      "loss_first": null,
+      "loss_last": null,
+      "loss_curve": []
+    }
+  ]
+}

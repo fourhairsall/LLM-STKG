@@ -1,0 +1,4 @@
+W0823 20:15:48.642000 17836 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2254.84it/s]
+D:\databuddy\专利写作\2026年7月\旅游推荐论文\LLM-STKG_paper\code\llm_stkg\kg\bge_encoder.py:20: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dim = self._model.get_sentence_embedding_dimension()
