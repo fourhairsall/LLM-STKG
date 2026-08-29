@@ -1,0 +1,24 @@
+{
+  "model": "Gwhere-style (contrastive residual-quantization Semantic-ID + generative retrieval, recipe-level reproduction of Gwhere, RecSys '26, arXiv:2607.26073)",
+  "city": "tky",
+  "k_list": [
+    1,
+    5,
+    10
+  ],
+  "metrics": {
+    "Recall@1": 0.0571,
+    "NDCG@1": 0.0571,
+    "MRR@1": 0.0571,
+    "Recall@5": 0.3319,
+    "NDCG@5": 0.1947,
+    "MRR@5": 0.1498,
+    "Recall@10": 0.3868,
+    "NDCG@10": 0.2135,
+    "MRR@10": 0.1581,
+    "MRR": 0.1582
+  },
+  "n_test": 2293,
+  "semantic_id_uniqueness": 5973,
+  "note": "Recipe-level Gwhere reproduction (contrastive RQ SID; LLM backbone=small decoder-only Transformer, EAKTO omitted, no visual modality) under the paper's full-candidate LOO protocol, to benchmark the latest 2026 generative POI SOTA and close reviewer critique #3."
+}
