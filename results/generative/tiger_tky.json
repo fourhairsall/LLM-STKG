@@ -1,0 +1,23 @@
+{
+  "model": "TIGER (RQ-VAE Semantic-ID + generative retrieval, NeurIPS 2023)",
+  "city": "tky",
+  "k_list": [
+    1,
+    5,
+    10
+  ],
+  "metrics": {
+    "Recall@1": 0.0196,
+    "NDCG@1": 0.0196,
+    "MRR@1": 0.0196,
+    "Recall@5": 0.1317,
+    "NDCG@5": 0.0745,
+    "MRR@5": 0.0559,
+    "Recall@10": 0.1596,
+    "NDCG@10": 0.084,
+    "MRR@10": 0.0601,
+    "MRR": 0.0602
+  },
+  "n_test": 2293,
+  "note": "Generative-retrieval SOTA baseline added to close reviewer critique #3."
+}

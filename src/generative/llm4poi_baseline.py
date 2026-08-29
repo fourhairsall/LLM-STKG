@@ -25,8 +25,36 @@ from torch.optim import AdamW
 from peft import LoraConfig, get_peft_model
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-WORKSPACE = os.path.normpath(os.path.join(HERE, "..", ".."))  # .../专利写作/2026年7月
+def _resolve_workspace():
+    """Walk up from this file until we find the data root that holds the
+    Foursquare-NYC processed split (identified by train_trajs.json, not just
+    the dir name, to skip empty placeholder dirs). Robust to the repo layout
+    (scripts live under src/generative/ after reorganisation)."""
+    d = HERE
+    for _ in range(8):
+        if os.path.isfile(os.path.join(d, "data", "real_foursquare_nyc", "processed", "train_trajs.json")):
+            return d
+        parent = os.path.dirname(d)
+        if parent == d:
+            break
+        d = parent
+    return os.path.dirname(HERE)  # fallback: code/
+WORKSPACE = _resolve_workspace()
+def _resolve_code_root():
+    """Walk up from this file until we find the dir holding the BGE cache
+    (poi_bge_emb*.npy). Robust to repo layout after reorganisation."""
+    d = HERE
+    for _ in range(8):
+        if os.path.isfile(os.path.join(d, "poi_bge_emb.npy")):
+            return d
+        parent = os.path.dirname(d)
+        if parent == d:
+            break
+        d = parent
+    return os.path.dirname(HERE)  # fallback
+CODE_ROOT = _resolve_code_root()  # .../code  (BGE caches live here)
 sys.path.insert(0, HERE)
+sys.path.insert(0, CODE_ROOT)
 from llm_stkg.evaluate import rank_metrics
 
 MAX_LEN = 64
@@ -144,7 +172,7 @@ def main():
         raw_train = json.load(open(os.path.join(processed_dir, "train_trajs.json"), encoding="utf-8"))
         train_trajs = [t["pois"] for t in raw_train]  # each: list of remapped POI ids
         test_pairs = json.load(open(os.path.join(processed_dir, "test_pairs.json"), encoding="utf-8"))
-        bge_cache = os.path.join(HERE, "poi_bge_emb%s.npy" % ("" if city == "nyc" else "_tky"))
+        bge_cache = os.path.join(CODE_ROOT, "poi_bge_emb%s.npy" % ("" if city == "nyc" else "_tky"))
         num_pois = int(np.load(bge_cache).shape[0])  # BGE cache aligned with POI indices
     else:
         # cross-domain processed (generic_loaders output)
@@ -158,7 +186,7 @@ def main():
         _bge_map = {"ml1m": "poi_bge_emb_ml1m.npy",
                     "steam200k": "poi_bge_emb_steam200k.npy",
                     "amazon_beauty": "poi_bge_emb_amazonbeauty.npy"}
-        bge_cache = os.path.join(HERE, _bge_map[city]) if city in _bge_map else None
+        bge_cache = os.path.join(CODE_ROOT, _bge_map[city]) if city in _bge_map else None
     # mask-history: 与 head_to_head 自动协议完全一致 —— 测试端重访率 < 0.05 则开启
     # （SASRec 一系标准协议：在历史里 ⇒ 不是答案，屏蔽已交互物品）。无重复消费域
     # （steam/ml1m/steam200k/amazon_beauty，revisit≈0）开启；重访主导域（foursquare）关闭。
