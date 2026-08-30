@@ -1,0 +1,12 @@
+{
+  "model": "MFDReNet (recipe-level, repeat-explore gate + 2-factor decoupling)",
+  "city": "nyc",
+  "protocol": "full-candidate leave-one-out",
+  "R@5": 0.1804,
+  "R@10": 0.2516,
+  "N@5": 0.1123,
+  "N@10": 0.1354,
+  "repeat_explore_gate_g": 0.0354,
+  "revisit_ratio": 0.7574,
+  "note": "Recipe-level re-implementation of MFDReNet (Wang et al., Multimedia Systems 2026). Repeat branch = learned-exponent freq^gamma * recency^delta over visited POIs; explore branch = GRU over history dotted with a 2-factor decoupled POI embedding; repeat-explore gate blends them. Contrastive module omitted. Learned POI embeddings; full-candidate ranking identical to all paper baselines."
+}

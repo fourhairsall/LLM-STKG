@@ -1,0 +1,11 @@
+{
+  "model": "TiIfSRec (recipe-level, dual-gated time/frequency GRU)",
+  "city": "nyc",
+  "protocol": "full-candidate leave-one-out",
+  "R@5": 0.378,
+  "R@10": 0.4686,
+  "N@5": 0.2621,
+  "N@10": 0.2917,
+  "revisit_ratio": 0.7574,
+  "note": "Recipe-level re-implementation of TiIfSRec (Wang, uOttawa 2026 thesis). Time-interval gate realised as sequence-position recency (user-anonymous session split exposes no absolute timestamps). Learned POI embeddings; full-candidate ranking identical to all paper baselines."
+}
